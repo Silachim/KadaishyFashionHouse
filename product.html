@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asante Jumpsuit - Kadaishy Fashion House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="main-header">
+        <nav class="navbar container">
+            <div class="nav-logo">
+                <a href="index.html">KADAISHY</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="our-world.html">Our World</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" aria-label="Search">🔍</a>
+                <a href="#" aria-label="User Account">👤</a>
+                <a href="#" aria-label="Shopping Bag">🛒</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content - Product Page -->
+    <main id="main-content">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb container">
+            <a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span>Asante Jumpsuit</span>
+        </div>
+
+        <!-- Product Display Section -->
+        <section class="product-display container">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Asante Jumpsuit - front view" id="main-product-image">
+                </div>
+                <div class="image-thumbnails">
+                    <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Front view">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Side view">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                        <img src="https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Back view">
+                    </div>
+                    <div class="thumbnail" data-image="https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80">
+                        <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Detail view">
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Asante Jumpsuit</h1>
+                <p class="price">₦85,000</p>
+                <p class="product-description">
+                    A bold, unisex jumpsuit that blends traditional African print with contemporary silhouette. 
+                    Featuring our signature Ankara fabric and modern cut for effortless elegance.
+                </p>
+                
+                <div class="product-options">
+                    <div class="option-group">
+                        <label for="size">Size:</label>
+                        <select id="size" name="size">
+                            <option value="">Select Size</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label>Color:</label>
+                        <div class="color-swatches">
+                            <div class="color-swatch active" data-color="indigo-gold" style="background: linear-gradient(45deg, #0A2342, #D4A017);"></div>
+                            <div class="color-swatch" data-color="earth-sunrise" style="background: linear-gradient(45deg, #B35437, #D4A017);"></div>
+                            <div class="color-swatch" data-color="charcoal-clay" style="background: linear-gradient(45deg, #2F2F2F, #B35437);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-to-cart-section">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-qty">-</button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="quantity-btn" id="increase-qty">+</button>
+                    </div>
+                    <button class="btn btn-primary add-to-cart-btn">Add to Cart - ₦85,000</button>
+                </div>
+
+                <div class="product-actions">
+                    <a href="#" class="wishlist-link">♡ Add to Wishlist</a>
+                    <a href="#" class="size-guide-link">📏 Size & Fit Guide</a>
+                </div>
+
+                <div class="product-details">
+                    <div class="detail-tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                        <button class="tab-btn" data-tab="care">Care Instructions</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="description">
+                        <p>The Asante Jumpsuit represents the perfect fusion of heritage and modernity. Crafted from premium African wax print cotton, this piece features:</p>
+                        <ul>
+                            <li>Traditional Ankara print with contemporary color blocking</li>
+                            <li>Wide-leg silhouette for comfort and movement</li>
+                            <li>Adjustable tie-waist for customizable fit</li>
+                            <li>Hidden pockets for practicality</li>
+                            <li>Unisex design suitable for all body types</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="shipping">
+                        <p><strong>Free shipping</strong> on orders over ₦100,000. Standard delivery: 3-5 business days within Nigeria.</p>
+                        <p><strong>Returns:</strong> Easy 30-day return policy. Items must be unworn with original tags.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="care">
+                        <p>To maintain the vibrant colors and fabric quality:</p>
+                        <ul>
+                            <li>Machine wash cold with similar colors</li>
+                            <li>Line dry in shade</li>
+                            <li>Iron on low heat</li>
+                            <li>Do not bleach</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- You May Also Like Section -->
+        <section class="related-products section">
+            <div class="container">
+                <h2>You May Also Like</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image" style="background: url('https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover;"></div>
+                        <h3>Adire Overshirt</h3>
+                        <p class="price">₦75,000</p>
+                        <a href="product.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image" style="background: url('https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover;"></div>
+                        <h3>Kente Maxi Dress</h3>
+                        <p class="price">₦105,000</p>
+                        <a href="product.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image" style="background: url('https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80') center/cover;"></div>
+                        <h3>Modern Boubou Set</h3>
+                        <p class="price">₦120,000</p>
+                        <a href="product.html" class="btn btn-secondary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Join Our Community</h3>
+                    <p>Get updates on new collections and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="our-world.html">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="TikTok">🎵 TikTok</a>
+                        <a href="#" aria-label="Twitter">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kadaishy Fashion House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
