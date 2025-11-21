@@ -205,6 +205,49 @@
             position: relative;
         }
 
+        /* === BRAND BANNER STYLES === */
+        .brand-banner {
+            padding: 0;
+            position: relative;
+        }
+
+        .banner-image {
+            height: 70vh;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .banner-content {
+            color: white;
+            max-width: 800px;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-content h2 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+            background: linear-gradient(45deg, #ffffff, var(--sunshine-yellow));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+        }
+
+        .banner-content p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+            font-weight: 300;
+        }
+
         /* === VIBRANT BUTTONS === */
         .btn {
             display: inline-block;
@@ -298,7 +341,7 @@
 
         .category-card {
             background: white;
-            padding: 3rem 2rem;
+            padding: 2rem;
             border-radius: 25px;
             text-align: center;
             text-decoration: none;
@@ -330,6 +373,19 @@
             box-shadow: 0 25px 50px rgba(0,0,0,0.2);
         }
 
+        .category-image {
+            height: 200px;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease;
+        }
+
+        .category-card:hover .category-image {
+            transform: scale(1.05);
+        }
+
         .category-icon {
             font-size: 4rem;
             margin-bottom: 1.5rem;
@@ -355,6 +411,24 @@
             opacity: 0.8;
             line-height: 1.6;
             font-size: 1.1rem;
+        }
+
+        .sub-categories {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sub-tag {
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--deep-indigo);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid var(--soft-lavender);
         }
 
         /* === VIBRANT FEATURED COLLECTION === */
@@ -457,19 +531,19 @@
 
         /* CORRECT PRODUCT IMAGES */
         .product-card:nth-child(1) .product-image {
-            background: url('https://images.unsplash.com/photo-1591047138182-238836bc1c02?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Female%20Asante%20jumpsuit%20style.jpeg?raw=true');
             background-size: cover;
             background-position: center;
         }
 
         .product-card:nth-child(2) .product-image {
-            background: url('https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Causal%20wear%202.jpg?raw=true');
             background-size: cover;
             background-position: center;
         }
 
         .product-card:nth-child(3) .product-image {
-            background: url('https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Aso-ofi%20jumpsuit.jpg?raw=true');
             background-size: cover;
             background-position: center;
         }
@@ -661,6 +735,21 @@
                 order: -1;
                 border-radius: 0 0 20px 20px;
             }
+
+            .banner-image {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .banner-content h2 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            
+            .banner-content p {
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
             
             .product-grid {
                 grid-template-columns: 1fr;
@@ -678,6 +767,21 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
                 text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner-image {
+                height: 40vh;
+                min-height: 300px;
+            }
+            
+            .banner-content h2 {
+                font-size: 2rem;
+            }
+            
+            .banner-content p {
+                font-size: 1rem;
             }
         }
     </style>
@@ -718,30 +822,68 @@
             </div>
         </section>
 
+        <!-- Brand Message Banner -->
+        <section class="brand-banner">
+            <div class="banner-image" style="background: linear-gradient(rgba(10, 35, 66, 0.4), rgba(10, 35, 66, 0.4)), url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Female%20Asante%20jumpsuit%20style.jpeg?raw=true') center/cover;">
+                <div class="banner-content">
+                    <h2>Where Tradition Meets Modern Style</h2>
+                    <p>Experience the perfect fusion of African heritage and contemporary fashion</p>
+                    <a href="shop.html" class="btn btn-primary">Explore The Fusion</a>
+                </div>
+            </div>
+        </section>
+
         <!-- Quick Product Navigation -->
         <section class="quick-nav section">
             <div class="container">
                 <h2>Shop By Category</h2>
                 <div class="category-grid">
-                    <a href="shop.html?category=tops" class="category-card">
-                        <div class="category-icon">👕</div>
-                        <h3>Tops</h3>
-                        <p>Explore our collection of shirts, blouses, and tops</p>
+                    <!-- Native Wear -->
+                    <a href="shop.html?category=native" class="category-card">
+                        <div class="category-image" style="background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Aso-ofi%20jumpsuit.jpg?raw=true') center/cover;"></div>
+                        <h3>Native Wear</h3>
+                        <p>Traditional styles with modern elegance</p>
+                        <div class="sub-categories">
+                            <span class="sub-tag">Men</span>
+                            <span class="sub-tag">Women</span>
+                            <span class="sub-tag">Bridal</span>
+                        </div>
                     </a>
-                    <a href="shop.html?category=dresses" class="category-card">
-                        <div class="category-icon">👗</div>
-                        <h3>Dresses</h3>
-                        <p>From casual to formal, find your perfect dress</p>
+                    
+                    <!-- English Wear -->
+                    <a href="shop.html?category=english" class="category-card">
+                        <div class="category-image" style="background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Causal%20wear%202.jpg?raw=true') center/cover;"></div>
+                        <h3>English Wear</h3>
+                        <p>Contemporary styles for modern living</p>
+                        <div class="sub-categories">
+                            <span class="sub-tag">Men</span>
+                            <span class="sub-tag">Women</span>
+                            <span class="sub-tag">Office</span>
+                            <span class="sub-tag">Casual</span>
+                        </div>
                     </a>
-                    <a href="shop.html?category=outerwear" class="category-card">
-                        <div class="category-icon">🧥</div>
-                        <h3>Outerwear</h3>
-                        <p>Jackets, coats, and stylish layers</p>
+                    
+                    <!-- Special Occasions -->
+                    <a href="shop.html?category=special" class="category-card">
+                        <div class="category-image" style="background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Female%20Asante%20jumpsuit%20style.jpeg?raw=true') center/cover;"></div>
+                        <h3>Special Occasions</h3>
+                        <p>Perfect for weddings and celebrations</p>
+                        <div class="sub-categories">
+                            <span class="sub-tag">Bridal</span>
+                            <span class="sub-tag">Events</span>
+                            <span class="sub-tag">Ceremonies</span>
+                        </div>
                     </a>
-                    <a href="shop.html?category=bottoms" class="category-card">
-                        <div class="category-icon">👖</div>
-                        <h3>Bottoms</h3>
-                        <p>Pants, skirts, and everything in between</p>
+                    
+                    <!-- New Arrivals -->
+                    <a href="shop.html?category=new" class="category-card">
+                        <div class="category-image" style="background: url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Asante%20jumpsuit%20style.jpeg?raw=true') center/cover;"></div>
+                        <h3>New Arrivals</h3>
+                        <p>Latest ready-to-wear collections</p>
+                        <div class="sub-categories">
+                            <span class="sub-tag">Just In</span>
+                            <span class="sub-tag">Trending</span>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -760,15 +902,15 @@
                     </div>
                     <div class="product-card">
                         <div class="product-image"></div>
-                        <h3>Adire Overshirt</h3>
+                        <h3>Urban Casual Set</h3>
                         <p class="price">₦75,000</p>
-                        <a href="adire-overshirt.html" class="btn btn-secondary">View Details</a>
+                        <a href="urban-casual.html" class="btn btn-secondary">View Details</a>
                     </div>
                     <div class="product-card">
                         <div class="product-image"></div>
-                        <h3>Kente Maxi Dress</h3>
+                        <h3>Aso-Ofi Fusion</h3>
                         <p class="price">₦105,000</p>
-                        <a href="kente-dress.html" class="btn btn-secondary">View Details</a>
+                        <a href="aso-ofi-fusion.html" class="btn btn-secondary">View Details</a>
                     </div>
                 </div>
             </div>
