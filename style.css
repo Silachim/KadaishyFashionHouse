@@ -1,6 +1,6 @@
-/* === KADAISHY FASHION HOUSE - VIBRANT & COLORFUL === */
+/* === KADAISHY FASHION HOUSE - VIBRANT STYLES === */
 
-/* Enhanced Vibrant Color Palette */
+/* Vibrant Color Palette */
 :root {
     --vibrant-pink: #FF2D78;
     --electric-blue: #00D4FF;
@@ -14,7 +14,7 @@
     --charcoal: #2F2F2F;
 }
 
-/* Base Reset & Typography */
+/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +26,6 @@ body {
     color: var(--charcoal);
     background: linear-gradient(135deg, var(--soft-lavender) 0%, var(--warm-cream) 50%, #ffffff 100%);
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,19 +33,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Layout Components */
 .container {
     width: 100%;
     max-width: 1400px;
@@ -54,18 +40,13 @@ img {
     padding: 2rem 40px;
 }
 
-.section {
-    padding: 5rem 0;
-}
-
-/* === VIBRANT NAVIGATION === */
+/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 0;
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -82,7 +63,6 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .nav-links {
@@ -97,95 +77,32 @@ img {
     padding: 0.8rem 1.5rem;
     border-radius: 30px;
     transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-links a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, var(--vibrant-pink), var(--electric-blue));
-    transition: left 0.4s ease;
-    z-index: -1;
-}
-
-.nav-links a:hover::before {
-    left: 0;
 }
 
 .nav-links a:hover {
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 45, 120, 0.3);
-}
-
-.nav-icons {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-icons a {
-    padding: 0.8rem;
-    border-radius: 50%;
-    background: linear-gradient(45deg, var(--soft-lavender), white);
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.nav-icons a:hover {
-    transform: scale(1.2) rotate(10deg);
     background: linear-gradient(45deg, var(--vibrant-pink), var(--electric-blue));
     color: white;
+    transform: translateY(-3px);
 }
 
-/* === DRAMATIC HERO SECTION === */
+/* Hero Section */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 100vh;
     align-items: center;
-    background: linear-gradient(135deg, 
-        var(--vibrant-pink) 0%, 
-        var(--rich-purple) 30%, 
-        var(--electric-blue) 70%, 
-        var(--sunshine-yellow) 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: float 20s infinite linear;
-}
-
-@keyframes float {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    100% { transform: translate(-50px, -50px) rotate(360deg); }
+    background: linear-gradient(135deg, var(--vibrant-pink) 0%, var(--rich-purple) 30%, var(--electric-blue) 100%);
 }
 
 .hero-content {
     padding: 4rem;
     color: white;
-    position: relative;
-    z-index: 2;
 }
 
 .hero-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
     background: linear-gradient(45deg, white, var(--sunshine-yellow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -193,54 +110,24 @@ img {
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 2.5rem;
     opacity: 0.9;
-    font-weight: 300;
 }
 
 .hero-image {
-    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                url('https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 20px 0 0 20px;
 }
 
-.hero-image::before {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(45deg, var(--sunshine-yellow), var(--vibrant-pink));
-    border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.6;
-    animation: pulse 4s infinite alternate;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); opacity: 0.4; }
-    100% { transform: scale(1.1); opacity: 0.7; }
-}
-
-.hero-image img {
-    position: relative;
-    z-index: 2;
-    border-radius: 20px;
-    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
-    transform: rotate(-5deg);
-    transition: transform 0.5s ease;
-}
-
-.hero-image:hover img {
-    transform: rotate(0deg) scale(1.05);
-}
-
-/* === VIBRANT BUTTONS === */
+/* Buttons */
 .btn {
     display: inline-block;
-    padding: 18px 40px;
+    padding: 15px 35px;
     border: none;
     border-radius: 50px;
     font-family: "Poppins", sans-serif;
@@ -250,25 +137,7 @@ img {
     cursor: pointer;
     transition: all 0.4s ease;
     text-decoration: none;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    font-size: 1.1rem;
-}
-
-.btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-    transition: left 0.6s ease;
-}
-
-.btn:hover::before {
-    left: 100%;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -278,7 +147,7 @@ img {
 }
 
 .btn-primary:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(255, 45, 120, 0.6);
 }
 
@@ -286,7 +155,6 @@ img {
     background: transparent;
     color: white;
     border: 3px solid white;
-    backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
@@ -295,82 +163,43 @@ img {
     transform: translateY(-5px);
 }
 
-/* === COLORFUL QUICK NAVIGATION === */
+/* Quick Navigation */
 .quick-nav {
     background: linear-gradient(135deg, var(--soft-lavender) 0%, var(--warm-cream) 100%);
     padding: 5rem 0;
-    position: relative;
-}
-
-.quick-nav::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, 
-        var(--vibrant-pink), 
-        var(--electric-blue), 
-        var(--sunshine-yellow), 
-        var(--lime-green), 
-        var(--rich-purple));
 }
 
 .quick-nav h2 {
     text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 4rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
     background: linear-gradient(45deg, var(--vibrant-pink), var(--rich-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    position: relative;
-}
-
-.quick-nav h2::after {
-    content: '✨';
-    position: absolute;
-    font-size: 2rem;
-    animation: sparkle 2s infinite;
-}
-
-@keyframes sparkle {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.2); }
 }
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .category-card {
     background: white;
-    padding: 3rem 2rem;
-    border-radius: 25px;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
     color: var(--charcoal);
     transition: all 0.4s ease;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
     border: 3px solid transparent;
-    position: relative;
-    overflow: hidden;
 }
 
-.category-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, 
-        var(--vibrant-pink), 
-        var(--electric-blue), 
-        var(--sunshine-yellow));
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
 }
 
 .category-card:nth-child(1) { border-color: var(--vibrant-pink); }
@@ -378,30 +207,13 @@ img {
 .category-card:nth-child(3) { border-color: var(--sunshine-yellow); }
 .category-card:nth-child(4) { border-color: var(--lime-green); }
 
-.category-card:hover {
-    transform: translateY(-15px) scale(1.05);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
-}
-
 .category-icon {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    transition: all 0.4s ease;
-    display: inline-block;
-}
-
-.category-card:hover .category-icon {
-    transform: scale(1.3) rotate(10deg);
-    animation: bounce 1s ease;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: scale(1.3) rotate(10deg); }
-    50% { transform: scale(1.5) rotate(15deg); }
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 .category-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, var(--vibrant-pink), var(--rich-purple));
     -webkit-background-clip: text;
@@ -409,37 +221,16 @@ img {
     background-clip: text;
 }
 
-.category-card p {
-    color: var(--charcoal);
-    opacity: 0.8;
-    line-height: 1.6;
-    font-size: 1.1rem;
-}
-
-/* === VIBRANT FEATURED COLLECTION === */
+/* Featured Collection */
 .featured-collection {
     background: linear-gradient(135deg, #ffffff 0%, var(--soft-lavender) 100%);
-    padding: 6rem 0;
-    position: relative;
-}
-
-.featured-collection::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, 
-        var(--hot-orange), 
-        var(--vibrant-pink), 
-        var(--rich-purple));
+    padding: 5rem 0;
 }
 
 .featured-collection h2 {
     text-align: center;
-    font-size: 4rem;
-    margin-bottom: 4rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
     background: linear-gradient(45deg, var(--hot-orange), var(--vibrant-pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -448,76 +239,61 @@ img {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
 }
 
 .product-card {
     background: white;
     padding: 2rem;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     transition: all 0.4s ease;
     border: 3px solid;
-    position: relative;
-    overflow: hidden;
-}
-
-.product-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 6px;
-    background: linear-gradient(90deg, var(--electric-blue), var(--lime-green));
-}
-
-.product-card:nth-child(odd) {
-    border-color: var(--electric-blue);
-    background: linear-gradient(135deg, white 0%, #f0f8ff 100%);
-}
-
-.product-card:nth-child(even) {
-    border-color: var(--vibrant-pink);
-    background: linear-gradient(135deg, white 0%, #fff0f5 100%);
 }
 
 .product-card:hover {
-    transform: translateY(-15px) rotate(2deg);
+    transform: translateY(-10px);
     box-shadow: 0 30px 60px rgba(0,0,0,0.25);
 }
 
+.product-card:nth-child(odd) { border-color: var(--electric-blue); }
+.product-card:nth-child(even) { border-color: var(--vibrant-pink); }
+
 .product-image {
-    height: 380px;
+    height: 350px;
     margin-bottom: 1.5rem;
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
+    border-radius: 15px;
 }
 
-.product-image::after {
-    content: 'NEW ✨';
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: linear-gradient(45deg, var(--vibrant-pink), var(--hot-orange));
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 700;
+.product-card:nth-child(1) .product-image {
+    background: linear-gradient(45deg, var(--vibrant-pink), var(--hot-orange)), 
+                url('https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 
-.product-card:hover .product-image {
-    transform: scale(1.08);
+.product-card:nth-child(2) .product-image {
+    background: linear-gradient(45deg, var(--electric-blue), var(--rich-purple)), 
+                url('https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.product-card:nth-child(3) .product-image {
+    background: linear-gradient(45deg, var(--sunshine-yellow), var(--lime-green)), 
+                url('https://images.unsplash.com/photo-1589810635657-232948472d98?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 
 .price {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin: 1rem 0;
     background: linear-gradient(45deg, var(--vibrant-pink), var(--hot-orange));
@@ -526,177 +302,29 @@ img {
     background-clip: text;
 }
 
-/* === COLORFUL BRAND MISSION === */
-.brand-mission {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 700px;
-    background: linear-gradient(135deg, 
-        var(--rich-purple) 0%, 
-        var(--vibrant-pink) 50%, 
-        var(--hot-orange) 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.brand-mission::before {
-    content: '';
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
-    background-size: 30px 30px;
-    animation: move 20s infinite linear;
-}
-
-@keyframes move {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-50px, -50px); }
-}
-
-.mission-text {
-    padding: 5rem;
+/* Footer */
+#main-footer {
+    background: linear-gradient(135deg, var(--deep-indigo) 0%, var(--rich-purple) 100%);
     color: white;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 4rem 0 2rem;
 }
 
-.mission-text h2 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: var(--sunshine-yellow);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.mission-text p {
-    font-size: 1.3rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.mission-image {
-    background: linear-gradient(45deg, rgba(0,0,0,0.2), rgba(0,0,0,0.4)),
-                url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* === VIBRANT INSTAGRAM FEED === */
-.instagram-feed {
-    background: linear-gradient(135deg, var(--warm-cream) 0%, var(--soft-lavender) 100%);
-    padding: 6rem 0;
-    position: relative;
-}
-
-.instagram-feed::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, 
-        var(--lime-green), 
-        var(--sunshine-yellow), 
-        var(--electric-blue));
-}
-
-.instagram-feed h2 {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 3rem;
-    background: linear-gradient(45deg, var(--lime-green), var(--electric-blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.instagram-grid {
+.footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
-.insta-post {
-    height: 280px;
-    border-radius: 25px;
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+.footer-section h3,
+.footer-section h4 {
+    margin-bottom: 1.5rem;
+    color: var(--sunshine-yellow);
 }
 
-.insta-post::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
-    opacity: 0;
-    transition: opacity 0.4s ease;
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 1rem;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
 }
-
-.insta-post:hover::before {
-    opacity: 1;
-}
-
-.insta-post:hover {
-    transform: scale(1.08) rotate(2deg);
-    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-}
-
-/* Colorful Instagram posts with patterns */
-.insta-post:nth-child(1) { 
-    background: linear-gradient(45deg, var(--vibrant-pink), var(--hot-orange));
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 2px, transparent 2px),
-        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 30px 30px, 20px 20px;
-}
-
-.insta-post:nth-child(2) { 
-    background: linear-gradient(45deg, var(--electric-blue), var(--rich-purple));
-    background-image: 
-        linear-gradient(45deg, transparent 49%, rgba(255,255,255,0.1) 50%, transparent 51%),
-        linear-gradient(-45deg, transparent 49%, rgba(255,255,255,0.1) 50%, transparent 51%);
-    background-size: 20px 20px;
-}
-
-.insta-post:nth-child(3) { 
-    background: linear-gradient(45deg, var(--sunshine-yellow), var(--lime-green));
-    background-image: 
-        radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 15px 15px;
-}
-
-.insta-post:nth-child(4) { 
-    background: linear-gradient(45deg, var(--rich-purple), var(--vibrant-pink));
-    background-image: 
-        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);
-}
-
-.insta-post:nth-child(5) { 
-    background: linear-gradient(45deg, var(--hot-orange), var(--sunshine-yellow));
-    background-image: 
-        radial-gradient(circle at center, rgba(255,255,255,0.2) 1px, transparent 1px);
-    background-size: 25px 25px;
-}
-
-.insta-post:nth-child(6) { 
-    background: linear-gradient(45deg, var(--lime-green), var(--electric-blue));
-    background-image: 
-        linear-gradient(0deg, transparent 24%, rgba(255,255,255,0.1) 25%, transparent 26%),
-        linear-gradient(90deg, transparent 24%, rgba(255,255,255,0.1) 25%, transparent 26%);
-    background-size: 20px 20px;
-}
-
-/* Continue with footer and other sections... */
-
-/* Update your HTML head to include these fonts */
