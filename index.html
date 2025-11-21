@@ -142,7 +142,7 @@
             color: white;
         }
 
-        /* === DRAMATIC HERO SECTION === */
+        /* === IMPROVED HERO SECTION === */
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -197,55 +197,12 @@
 
         .hero-image {
             background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                        url('https://images.unsplash.com/photo-1519457431-44ccd64a579b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+                        url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Female%20Asante%20jumpsuit%20style.jpeg?raw=true');
             background-size: cover;
             background-position: center;
             height: 100%;
             border-radius: 20px 0 0 20px;
             position: relative;
-        }
-
-        /* === BRAND BANNER STYLES === */
-        .brand-banner {
-            padding: 0;
-            position: relative;
-        }
-
-        .banner-image {
-            height: 70vh;
-            min-height: 500px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: relative;
-        }
-
-        .banner-content {
-            color: white;
-            max-width: 800px;
-            padding: 2rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .banner-content h2 {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-            background: linear-gradient(45deg, #ffffff, var(--sunshine-yellow));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1.1;
-        }
-
-        .banner-content p {
-            font-size: 1.4rem;
-            margin-bottom: 2.5rem;
-            opacity: 0.95;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-            font-weight: 300;
         }
 
         /* === VIBRANT BUTTONS === */
@@ -384,17 +341,6 @@
 
         .category-card:hover .category-image {
             transform: scale(1.05);
-        }
-
-        .category-icon {
-            font-size: 4rem;
-            margin-bottom: 1.5rem;
-            transition: all 0.4s ease;
-            display: inline-block;
-        }
-
-        .category-card:hover .category-icon {
-            transform: scale(1.3) rotate(10deg);
         }
 
         .category-card h3 {
@@ -730,25 +676,14 @@
                 font-size: 2.5rem;
             }
             
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
             .hero-image {
                 min-height: 400px;
                 order: -1;
                 border-radius: 0 0 20px 20px;
-            }
-
-            .banner-image {
-                height: 50vh;
-                min-height: 400px;
-            }
-            
-            .banner-content h2 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-            
-            .banner-content p {
-                font-size: 1.1rem;
-                margin-bottom: 2rem;
             }
             
             .product-grid {
@@ -771,16 +706,11 @@
         }
 
         @media (max-width: 480px) {
-            .banner-image {
-                height: 40vh;
-                min-height: 300px;
-            }
-            
-            .banner-content h2 {
+            .hero-content h1 {
                 font-size: 2rem;
             }
             
-            .banner-content p {
+            .hero-content p {
                 font-size: 1rem;
             }
         }
@@ -810,26 +740,15 @@
 
     <!-- Main Content - Homepage -->
     <main id="main-content">
-        <!-- Hero Section -->
+        <!-- Improved Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Wear Your Heritage.<br>Define Your Future.</h1>
-                <p>Bold, Unisex Apparel Fusing African Aesthetics with Modern Design.</p>
+                <h1>Where Tradition Meets Modern Style</h1>
+                <p>Bold Afro-Urban Fashion Fusing African Heritage with Contemporary Design</p>
                 <a href="shop.html" class="btn btn-primary">Shop The Latest Collection</a>
             </div>
             <div class="hero-image">
-                <!-- Background image set in CSS -->
-            </div>
-        </section>
-
-        <!-- Brand Message Banner -->
-        <section class="brand-banner">
-            <div class="banner-image" style="background: linear-gradient(rgba(10, 35, 66, 0.4), rgba(10, 35, 66, 0.4)), url('https://github.com/Silachim/KadaishyFashionHouse/blob/main/Female%20Asante%20jumpsuit%20style.jpeg?raw=true') center/cover;">
-                <div class="banner-content">
-                    <h2>Where Tradition Meets Modern Style</h2>
-                    <p>Experience the perfect fusion of African heritage and contemporary fashion</p>
-                    <a href="shop.html" class="btn btn-primary">Explore The Fusion</a>
-                </div>
+                <!-- Female Asante Jumpsuit as hero image -->
             </div>
         </section>
 
